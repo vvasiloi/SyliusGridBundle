@@ -4,3 +4,9 @@ services:
         arguments:
             - '@app.repository.book'
         public: true
+
+    app.books_by_author_query_builder:
+        class: AppBundle\QueryBuilder\BooksByAuthorQueryBuilder
+        arguments:
+            - '@app.repository.author'
+        public: true
